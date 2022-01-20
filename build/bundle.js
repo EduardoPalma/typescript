@@ -138,6 +138,18 @@ class usuario {
     get getRut() {
         return this.rut;
     }
+    suma(x, y) {
+        return x + y;
+    }
+}
+class unUsuario extends usuario {
+    constructor(nombre, edad, rut, colegio) {
+        super(nombre, edad, rut);
+        this.colegio = colegio;
+    }
+    suma(x, y) {
+        return super.suma(x, y);
+    }
 }
 let u = new usuario("eduardo", 25, "19494");
 console.log(u.getNombre);

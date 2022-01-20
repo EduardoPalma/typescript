@@ -20,6 +20,25 @@ class usuario{
     get getRut():string{
         return this.rut;
     }
+
+    suma(x:number,y:number):number{
+        return x+y;
+    }
+}
+
+class unUsuario extends usuario{
+    private colegio:string;
+
+    constructor(nombre:string,edad:number,rut:string,colegio:string){
+        super(nombre,edad,rut);
+        this.colegio = colegio;
+    }
+
+    suma(x:number,y:number):number{
+        return super.suma(x,y);
+    }
+ 
+
 }
 
 let u = new usuario("eduardo",25,"19494");

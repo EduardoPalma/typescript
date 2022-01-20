@@ -171,3 +171,16 @@ person.edad;
 person.nombre;
 console.log(person.getEdad);
 console.log(person.edad);
+
+
+// interfaz
+
+interface Pe {
+    titulo:string;
+    nombre:string;
+}
+
+// parecido a un objeto puro
+function unafuncion(persona:Pe) {
+    
+}
